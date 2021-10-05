@@ -4,7 +4,9 @@ from pathlib import Path
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../ui'))
-#folder deleting method
+
+
+# folder deleting method
 def del_dir(num_of_dir):
     baseDir = Path(__file__).resolve().parent.parent
     dirName = "ReportAllure1"
@@ -24,7 +26,8 @@ def del_dir(num_of_dir):
             print("Error: %s : %s" % (delDir, e.strerror))
     # print('dir deleted')
 
-#file deleting method
+
+# file deleting method
 def del_file(num_of_file):
     baseDir = Path(__file__).resolve().parent.parent
     dirName = "ReportHtml"
